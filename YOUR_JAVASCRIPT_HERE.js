@@ -1,9 +1,7 @@
-// Write your JS here
-
 //Hero object
 
 let hero = {
-    name: "Harry Potter",
+    name: "Merlin",
     heroic: true,
     inventory: [],
     health: 10,
@@ -13,22 +11,37 @@ let hero = {
     }
 }
 
-//Functions `rest, pickUpItem and equipWeapon` are all defined
-//Game logic functions
+let dagger = {
+    type: "dagger",
+    damage: 2
+}
 
-function rest(hero) {
-if (hero.health != 10) {
-    hero.health = 10
+//Function Rest
+
+function rest(person) {
+if (person.health != 10) {
+    person.health = 10
 } else {
-    alert ("health property of person already has the value 10")
+    alert ("You are as health as a wizard can be!")
     }
-    return hero
+    return person
 }
 
-function pickUpItem(hero, weapon) {
-    hero.inventory.push(weapon)
+//Function pickUpItem
+
+function pickUpItem(person, weapon) {
+    person.inventory.push(weapon)
+    return person
 }
 
-function equipWeapon(hero) {
+//Function equipWeapon
+
+function equipWeapon(person) {
+    if (person.inventory[0]) {
+        person.weapon = person.inventory[0]
+    }
+    if (!person.inventory[0]){
+        return null
+    }
     
 }
