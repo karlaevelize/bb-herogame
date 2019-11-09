@@ -45,3 +45,11 @@ function equipWeapon(person) {
     }
     
 }
+
+// //Function changeName
+// function changeName(params) {
+//     let yourName = prompt("An extraordinary journey awaits you. How may I address you?")
+// }
+
+
+//Function displayStats
