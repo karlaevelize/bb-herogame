@@ -17,3 +17,16 @@ const hero = {
     }
 }
 
+//Functions `rest, pickUpItem and equipWeapon` are all defined
+
+function rest() {
+    
+}
+
+function pickUpItem() {
+    
+}
+
+function equipWeapon() {
+    
+}
