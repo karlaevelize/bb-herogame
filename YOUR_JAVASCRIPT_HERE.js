@@ -1,12 +1,8 @@
 // Write your JS here
 
-// declare a variable hero and assign it an object
-//Hero object should have a name property. The value of name should be a string.
-//Hero object should have a name property. The value of name should be a string
-//Hero object should have an inventory property. The value of inventory should be an empty array
-//Hero object should have an health property. The value health should be the number 10
-//Hero object should have a weapon property. The value of weapon is an object with a type property which is a string and damage property which is 2
-const hero = {
+//Hero object
+
+let hero = {
     name: "Harry Potter",
     heroic: true,
     inventory: [],
@@ -18,15 +14,21 @@ const hero = {
 }
 
 //Functions `rest, pickUpItem and equipWeapon` are all defined
+//Game logic functions
 
-function rest() {
-    
+function rest(hero) {
+if (hero.health != 10) {
+    hero.health = 10
+} else {
+    alert ("health property of person already has the value 10")
+    }
+    return hero
 }
 
-function pickUpItem() {
-    
+function pickUpItem(hero, weapon) {
+    hero.inventory.push(weapon)
 }
 
-function equipWeapon() {
+function equipWeapon(hero) {
     
 }
