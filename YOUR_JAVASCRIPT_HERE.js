@@ -22,7 +22,7 @@ function rest(person) {
 if (person.health != 10) {
     person.health = 10
 } else {
-    alert ("You are as health as a wizard can be!")
+    alert ("You are as health as a creature can be!")
     }
     return person
 }
@@ -46,10 +46,14 @@ function equipWeapon(person) {
     
 }
 
-// //Function changeName
-// function changeName(params) {
-//     let yourName = prompt("An extraordinary journey awaits you. How may I address you?")
-// }
+//Function changeName
+function changeName() {
+    let yourName = prompt("An extraordinary journey awaits us!  How may I address you?", "type how you'd like to be called")
+    if (yourName != null) {
+        document.getElementById("name").innerHTML =
+        `It's time for an adventure... Here we go ${yourName}!`
+    }
+}
 
 
 //Function displayStats
